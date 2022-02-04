@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inditex - Noticias</title>
+
+
+	<link rel="icon" href="inditex.ico">
+	<link href="./bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta charset="utf-8">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+	<script type="text/javascript">
+	</script>
+	<link href="dashboard.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+	<div class="container-fluid" >
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" >
+	      <a></a>
+	      <a class="navbar-brand" href="inicio.html"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX+/v4WGRb///8AAAC2tbW6ubnS0dLW1tYUFxQRFREOEg4VGRXIx8ff3t7Av78JDgnl5OSpqKgACADs6+uwr68rKikjIyIaGhj08/MABABFREOVlJRmZWSioaFRUE/FxMSFhIRubW19e3uOjY0yMjE2NjU9PDxJSEhdW1thX19paGh0c3OTkpKcmpooJyYeHRznN4tnAAAE4ElEQVR4nO2di17qMAyHS4awDWEKKsP7/YYe3//tTtfBvHA8xp9Ju9X/9wCkn0m7sLFoDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4FdD7UFJ8GyrJfQHKopEB0lbuNQxLOdprx0k5zqGsyR2w3HiPr5QrD6eYLG/o2O47RYwXQ4HSgwnOadKioOZzllKfWeYHKldAmbXeUhBQye14a7W5+9cFwFLtFrBVW04USqR8nrKyqCaoKGlW0EyVDqp93mCWiVareG0KqI0GWuEsHswuKCh29wZlgoxaHYTukTtIsxBVhnOjXyQVgjak6CoLlb5jXxjT2UbBO1h7pq24jRWwXXTNr2QDsMVnCsL2m+H9eVQuuml8rYVGbQr2asNn2UDUXm4YAmqXKTeL2XVtPVFI9kMsgTn+oKGzmvDbclQbEH1Eq0Wc1Ftl1S0abMlyvlKWLz4EGyaNsFgXEEfJWqapm0u17SxBb1kcN20ZddiTRuVd23KoF1PMrLx8jsxQcPKYJ76yWDTtE0fheJxS9SboKFBfbEQuhdL5SnvFPVUotWSJrXhk0hEMqw9mPvag25Nu4L3obiChUdBQ0dy96GYJZp7ukysV3VZtVejROCpDxmeYOozg3ZZx9M0TTOB+1BsQZ2bep+v63CR53nx8/tQXEGfh0y9sFnNjz+HKej1kFktTeTxcosFZSBzzxLMYxfMPB8yYhDxBKMvUZ0nIx4g8xD5HuSWaGf3IDODHRY8jlyQeBlUesCsDxEvg4vOHjLmMfYS5QlKfPcMAldwEX0Guyt4wctgd0uUKdjdDC5jP2RYglmHBVklmnX4kEGJugx2+BRduieOX5ao6E8fPEJ0GfshA0GUaKuh1e+nvhQ867Ag482QX5DB6AW7e8gwSzR6wS4fMpG3alexlyhTsLslGr3gE09Q6fU+dX7BHjyCYKdL1MS/B5/jFjTcEu3uZSLyDEYvaLwK6k7g+STmCefbRCqUwW3Hmc+f8HMzKHLI0Gw1A0Vness/Q9oMetyDNK6jSb/I+r+QrBLNki2hN20GdTi16SObEb3uwebFHbXpI5sBdzklKie4HpHT83Uj0gp6zaC7MFUfOfL0G1v/guu3rdNEc8LJazSmoNAhU8esR+SkicL0kc1gzD0oKWjowc1Zyl48GNJeAMHV++S9/NaLoO89WEU17n1yjfkqG6GYGZSdMGGodO+TK8xX2YgURtAaLlzchc5gyDeBguxB07xP3kuulEfx9MNk0EYeemlLwwmuJzf25KvjXRSmoMYimsZb864yV3BPYw2rN+ZHmr9lpK1gJWqaxlt0gszHEJOQgk3jvVBrvLkZVClR89p4v2gMNnQBmBnUEmwab7kZOR8+f5JkQQUNHbq2ND/UuV8aPIOG6I/7Exf3OoJnoTNoSzN1f2Odxjt8iTaDnHSmeYcvUfOm8Va4H8wtUeWOWK/x5gmOdDOo2XjbTw5fosY1HLWhdOPdjhI1Zj19U3zets1gOwTXo6qk7wfzBEc+ngatXgAQnrfNzeCe2r8TeMOxwv1gGnAEe9Pz8VCf8V3dlorO21595/xaUfG/erxS/2+IQmw45XcMfVIcx244XQobtg/RxpvG/fYh+wDYx0Xg20gKAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIv4CxbHX3S1xxqgAAAAAElFTkSuQmCC" alt="" width="30" height="24" class="d-inline-block align-text-top">  Inditex</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+	        <ul class="navbar-nav mr-auto">
+	          <li class="nav-item active">
+	            <a class="nav-link" href="inicio.html">Home</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="https://www.zara.com">Zara</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="https://www.hm.com">HM</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="cotizaciones.html">Cotizaciones</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="historia.html">Historia</a> 
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="noticias.html">Noticias (Current)</a> 
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="unete.html">Únete</a> 
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="marcas.html">Marcas</a> 
+	          </li>
+	        </ul>
+	      </div>
+	    </nav>
+</div></br></br></br>
+<div class="container-fluid">
+	<h3>Noticias Inditex</h3>
+	<div class="row">
+		<div class="w-25 p-3" class="column">
+			<div class="card text-center">
+			  <div class="card-header">
+			    El pais
+			  </div>
+			  <div class="card-body">
+			    <h5 class="card-title" >Noticias Inditex en El País</h5>
+			   <img src="https://imagenes.elpais.com/resizer/q1Bzvi_vytH6svtum46Q9iiKu8Q=/300x300/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/PSMME3J7ZBDOHK4S6ZIIFVDEAQ.png" width="200" height="200"></br></br>
+			    <a href="https://elpais.com/buscador/?q=inditex" class="btn btn-primary">Ir</a>
+			  </div>
+			</div>
+		</div>
+		<div class="w-25 p-3" class="column">
+			<div class="card text-center">
+				<div class="card-header">
+				    El Mundo
+				</div>
+				<div class="card-body">
+				    <h5 class="card-title" >Noticias Inditex en El Mundo</h5>
+				   <img src="https://i.pinimg.com/736x/7e/39/e6/7e39e667364e1362bc0c9e2dd42778e9.jpg" width="300" height="200"></br></br>
+				    <a href="https://ariadna.elmundo.es/buscador/archivo.html?q=inditex&b_avanzada=" class="btn btn-primary">Ir</a>
+				</div>
+			</div>
+		</div>
+		<div class="w-25 p-3" class="column">
+			<div class="card text-center">
+				<div class="card-header">
+				    Google
+				</div>
+				<div class="card-body">
+				    <h5 class="card-title" >Noticias Inditex en Google</h5>
+				   <img src="https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png" width="200" height="200"></br></br>
+				    <a href="https://www.google.com/search?q=inditex&rlz=1C1SQJL_esES866ES866&sxsrf=APq-WBvMX0fCu_AMJk66gOVgLlW1f9tdJw:1643974665907&source=lnms&tbm=nws&sa=X&sqi=2&ved=2ahUKEwiCmuzv-uX1AhWOl3IEHf9LClEQ_AUoAXoECAEQAw&biw=1821&bih=1164&dpr=0.75" class="btn btn-primary">Ir</a>
+				</div>
+			</div>
+		</div>	
+		<div class="w-25 p-3" class="column">
+			<div class="card text-center">
+				<div class="card-header">
+				    ABC
+				</div>
+				<div class="card-body">
+				    <h5 class="card-title" >Noticias Inditex en ABC</h5>
+				   <img src="https://eldocumentalistaudiovisual.files.wordpress.com/2015/02/abc.jpg" width="200" height="200"></br></br>
+				    <a href="https://www.abc.es/instituciones/empresas/inditex/" class="btn btn-primary">Ir</a>
+				</div>
+			</div>
+		</div>
+			
+</div>
+</div>
+</body>
+</html>
