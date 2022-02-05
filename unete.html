@@ -67,20 +67,105 @@
 </div></br></br></br>
 <div class="container-fluid">
 	<h4>Rellena el formulario y recibe notificaciones con las novedades</h4>
+</div></br></br></br></br></br></br></br>
+
+
+<div align="center">
+	<div class="jumbotron jumbotron-fluid bg-secondary rounded" align="left" style="width:864px">
+		<p></p></br>
+		<div class="container-fluid">	
+		<h4>  Introduce tus datos</h4></br>
+			
+		</div>
+		<div class="container-fluid">	
+			<form action="/signup" method="post" id="signup">
+			  <div class="row">
+			    <div class="col">
+			      <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+			    </div>
+			    <div class="col">
+			      <input type="text" id="apellidos" class="form-control" placeholder="Apellidos">
+			    </div>
+			  </div></br>
+			  <div class="row">
+			    <div class="col">
+			      <input type="email" id="email" class="form-control" placeholder="Email">
+			    </div>
+			    <div class="col">
+			      <input type="password" id="contra" class="form-control" placeholder="Contraseña">
+			    </div>
+			  </div></br>
+			  <div class="form-group">
+				    <input type="text" class="form-control" id="inputAddress" placeholder="Dirección">
+			  </div></br>
+			  <div class="row">
+			    <div class="form-group col">
+			      <input type="text" class="form-control" id="inputCity" placeholder="Ciudad">
+			    </div>
+			    <div class="form-group col">
+			      <input type="text" class="form-control" id="inputZip" placeholder="Codigo Postal">
+			    </div>
+			  </div></br>
+			  <div align="center">	
+			  <button type="button" onclick="getVal()" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Suscribete!</button>
+			  </div>
+			  <p></p></br>
+			  
+			</form>	
+		</div>
+	</div>
+</div></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Información</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      	<p>Se ha registrado con exito:</p>
+      	<p>Nombre: <label id="nombre-pop"> Campo sin completar</label> </p>	
+       	
+       	<p>Apellidos: <label id="apellidos-pop"> Campo sin completar</label></p>	
+       	
+       	<p>Email: <label id="email-pop"> Campo sin completar</label></p>	
+       	
+       	<p>Contraseña: <label id="contra-pop"> Campo sin completar</label></p>	
+       	
+       	
+      </div>
+      <div class="modal-footer">
+        <button  type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
 </div>
+<script>
+	function getVal(){
+		document.getElementById("nombre-pop").innerHTML =document.getElementById("nombre").value;
+		document.getElementById("nombre").value ='';
+		document.getElementById("apellidos-pop").innerHTML =document.getElementById("apellidos").value;
+		document.getElementById("apellidos").value ='';
+		document.getElementById("email-pop").innerHTML =document.getElementById("email").value;
+		document.getElementById("email").value ='';
+		document.getElementById("contra-pop").innerHTML =document.getElementById("contra").value;
+		document.getElementById("contra").value ='';
+		document.getElementById("inputCity").value ='';
+		document.getElementById("inputZip").value ='';
+		document.getElementById("inputAddress").value ='';
 		
-		<form>
-			<div class="form-row">
-				<div class="form-group md-6">	
-					<label>Nombre</label></br>
-					<input type="text" name="Nombre">
-				</div>
-				<div class="form-group md-6">
-					<label>Apellidos</label></br>
-					<input type="text" name="Apellidos">
-				</div>
-			</div>
-		</form>
+		
+	}
+</script>
+
+<div class="container-fluid" align="center">
+	<p>Gonzalo Barceló - 2022</p>
+	<p>Si tiene alguna duda<a href="mailto:g.barceloalvarez@gmail.com" class="card-link"> contactenos!</a></p>
+</div>
 
 </body>
 </html>
