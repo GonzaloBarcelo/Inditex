@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>Inditex - Noticias</title>
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+
 
 	<link rel="icon" href="inditex.ico">
 	<link href="./bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +37,8 @@
 	<script type="text/javascript">
 	</script>
 	<link href="dashboard.css" rel="stylesheet">
-
+<script type="text/javascript" src="./exec.js">
+	</script>
 
 
 </head>
@@ -50,7 +53,7 @@
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-	        <ul class="navbar-nav mr-auto">
+	        <ul class="navbar-nav me-auto">
 	          <li class="nav-item active">
 	            <a class="nav-link" href="inicio.html">Home</a>
 	          </li>
@@ -76,6 +79,10 @@
 	            <a class="nav-link" href="marcas.html">Marcas</a> 
 	          </li>
 	        </ul>
+	        <div class="d-flex">
+		        <input class="form-control me-2" id="searcher" type="search" placeholder="Buscar en la página" aria-label="Search"  autocomplete="off" data-bd-docs-version="5.1" >
+		        <button class="btn btn-outline-success" onclick="search_in_page()">Search</button>
+		    </div>
 	      </div>
 	    </nav>
 </div></br></br></br>
@@ -132,6 +139,60 @@
 		</div>
 			
 </div>
+<div class="container-fluid">
+	<div class="card">
+	  	<div class="card-header">
+		    El español
+		</div>
+		<div class="card-body">
+		    <h5 class="card-title">Inditex, Mango y H&M</h5>
+		    <p class="card-text">Las estrategias de Inditex, Mango y H&M cuajan: el comercio ‘online’ de moda en Europa se disparó en 2021</p>
+		    <a href="https://www.elespanol.com/invertia/empresas/distribucion/20220213/estrategias-inditex-mango-hm-comercio-europa-disparo/649435087_0.html" class="btn btn-primary">Ir</a>
+		</div>
+	</div></br>
 </div>
+</div>
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <div>
+      © 2022 Copyright:
+    <a class="text-white" href="https://https://github.com/GonzaloBarcelo/Inditex">Gonzalo Barceló</a>
+    <p>Si tiene alguna duda<a href="mailto:g.barceloalvarez@gmail.com" class="card-link"> contactenos!</a></p></br>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
